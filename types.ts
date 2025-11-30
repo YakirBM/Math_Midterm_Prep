@@ -33,8 +33,3 @@ export interface Topic {
   description: string;
   questions: Question[];
 }
-
-export interface User {
-  email: string;
-  isAuthenticated: boolean;
-}
