@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Allows the app to run on any path (good for GH pages)
+  base: './', // Ensures assets are loaded correctly on GitHub Pages
+  build: {
+    outDir: 'dist',
+  }
 })
